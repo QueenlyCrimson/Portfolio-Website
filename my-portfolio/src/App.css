@@ -13,6 +13,10 @@
   }
 }
 
+.App {
+  background-color: black;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,9 +28,22 @@
   color: white;
 }
 
+.navbardiv {
+  background-color: #282c34;
+  color: white;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navitem {
+  margin:auto
+}
+
 .App-link {
   color: #61dafb;
-}
+} 
 
 @keyframes App-logo-spin {
   from {
