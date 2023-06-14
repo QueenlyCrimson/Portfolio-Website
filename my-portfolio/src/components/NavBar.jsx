@@ -5,7 +5,7 @@ const NavBar = () => {
   return(
     <header>
       <nav>
-        <div>
+        <div className="">
           <h1>Erin Keys</h1>
           <h1>Home</h1>
           <h1>Projects</h1>
@@ -13,6 +13,6 @@ const NavBar = () => {
       </nav>
     </header>
   )
-}
+} 
 
 export default NavBar
