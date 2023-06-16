@@ -1,9 +1,10 @@
+import ProjectMemory from "./ProjectMemory"
 
 const Projects = () => {
 
   return(
     <div>
-      <div></div>
+      <div className="duocontainer"><ProjectMemory /> <ProjectMemory /></div>
     </div>
   )
 }

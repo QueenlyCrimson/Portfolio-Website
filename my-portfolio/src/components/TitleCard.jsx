@@ -33,7 +33,7 @@ const TitleCard = () => {
         </div>
       </div>
       <div className="titleboxitem">A Software Developer who loves to make...</div>
-      <div className="titleboxitem"><span ref={el}></span></div>
+      <div className="titleboxitem"><span className="typedmoment" ref={el}></span></div>
       
     </div>
   )
