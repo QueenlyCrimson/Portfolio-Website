@@ -37,10 +37,29 @@
 
 }
 
+.titleboxitem {
+  margin:auto;
+  color: white;
+  font-size: 3vh;
+}
+
+.erin {
+font-size: 2vh;
+} 
+
+.titlebox {
+  display:flex;
+  flex-direction: column;
+}
+
 .navitem {
   margin:auto
 }
 
+img {
+  margin: 5vh;
+  border-radius: 50%;
+}
 .App-link {
   color: #61dafb;
 } 

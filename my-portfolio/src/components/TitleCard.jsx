@@ -1,9 +1,40 @@
+import Typed from "typed.js"
+import { useEffect, useRef } from "react"
+
 const TitleCard = () => {
 
+  const el = useRef(null);
+
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["React Apps", "Stories", "Interactive Experiences", "Connections"], // Strings to display
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 700,
+      loop: true,
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return(
-    <div>
-      <div><img src="https://media.licdn.com/dms/image/D5603AQF8Ezpnd39a6w/profile-displayphoto-shrink_800_800/0/1684017274256?e=1692230400&amp;v=beta&amp;t=rkZF01CPwU9LGGQTHyQEgMX5eIzKpD-j7Mckw-7M_Cc"></img></div>
-      <div></div>
+    <div className="titlebox">
+      <div className="titleboxitem" >
+        <img src="https://media.discordapp.net/attachments/710881503592185867/1118703867379585074/1684017274256.png?width=600&height=600" alt="">
+        </img>
+        <div>
+          Erin Keys
+        </div>
+      </div>
+      <div className="titleboxitem">A Software Developer who loves to make...</div>
+      <div className="titleboxitem"><span ref={el}></span></div>
+      
     </div>
   )
 }
