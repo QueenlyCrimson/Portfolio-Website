@@ -186,3 +186,7 @@ main {
     transform: rotate(360deg);
   }
 }
+
+.projectImg {
+  max-width: 35vh;
+}
