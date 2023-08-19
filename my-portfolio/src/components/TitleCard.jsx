@@ -26,7 +26,7 @@ const TitleCard = () => {
   return(
     <div className="titlebox">
       <div className="titleboxitem" >
-        <img src="https://media.discordapp.net/attachments/710881503592185867/1118703867379585074/1684017274256.png?width=600&height=600" alt="">
+        <img className="portrait" src="https://media.discordapp.net/attachments/710881503592185867/1118703867379585074/1684017274256.png?width=600&height=600" alt="">
         </img>
         <div>
           Erin Keys
